@@ -21,7 +21,7 @@ public class Book implements Copyable {
     }
 
     @Override
-    public Copyable copy() {
+    public Book copy() {
         return new Book(id, name, content);
     }
 }
