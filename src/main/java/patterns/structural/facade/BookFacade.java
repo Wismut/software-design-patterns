@@ -1,6 +1,6 @@
 package patterns.structural.facade;
 
-public class BookCreatingFacade {
+public class BookFacade {
     Author author = new Author();
     Publisher publisher = new Publisher();
     Reviewer reviewer = new Reviewer();
