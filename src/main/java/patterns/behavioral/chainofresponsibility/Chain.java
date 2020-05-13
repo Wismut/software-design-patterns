@@ -11,7 +11,7 @@ public class Chain {
     private void buildChain() {
         this.chain = new FirstCharacterLowercaseHandler(
                 new FirstCharacterUppercaseHandler(
-                        new FirstCharacterNonLetter(null)
+                        new FirstCharacterNotLetter(null)
                 ));
     }
 
