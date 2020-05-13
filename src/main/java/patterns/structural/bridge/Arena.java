@@ -9,8 +9,6 @@ public class Arena {
                 new Warrior(new Bow()),
                 new Archer(new Sword()),
                 new Archer(new Bow()));
-        for (Hero hero : heroes) {
-            hero.fight();
-        }
+        heroes.forEach(Hero::fight);
     }
 }

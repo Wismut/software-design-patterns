@@ -1,7 +1,7 @@
 package patterns.behavioral.chainofresponsibility;
 
 
-public class Runner {
+public class WordHandleRunner {
     public static void main(String[] args) {
         Chain chain = new Chain();
         chain.handle("sdgsdf");
