@@ -9,20 +9,20 @@ public class Order implements Collection {
     }
 
     @Override
-    public Iterator getIterator() {
+    public Iterator<Item> getIterator() {
         return new ItemIterator();
     }
 
-    class ItemIterator implements Iterator {
+    class ItemIterator implements Iterator<Item> {
         private int index;
 
         @Override
         public boolean hasNext() {
-            return index < items.length - 1;
+            return index < items.length;
         }
 
         @Override
-        public Object next() {
+        public Item next() {
             if (hasNext()) {
                 return items[index++];
             } else {

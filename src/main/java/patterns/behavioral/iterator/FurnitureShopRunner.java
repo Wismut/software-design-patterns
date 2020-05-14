@@ -5,9 +5,10 @@ public class FurnitureShopRunner {
     public static void main(String[] args) {
         Item[] items = {new Chair(), new Sofa(), new Table(), new Sofa()};
         Order order = new Order(items);
-        Iterator iterator = order.getIterator();
+        Iterator<Item> iterator = order.getIterator();
+        System.out.println("Order consists of:");
         while (iterator.hasNext()) {
-            iterator.next();
+            iterator.next().printName();
         }
     }
 }
