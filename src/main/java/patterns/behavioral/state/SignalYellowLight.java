@@ -8,7 +8,7 @@ public class SignalYellowLight implements State {
     }
 
     @Override
-    public void changeState() {
-
+    public void nextState(TrafficLight trafficLight) {
+        trafficLight.setState(new SignalRedLight());
     }
 }

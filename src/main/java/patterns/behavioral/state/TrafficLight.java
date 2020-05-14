@@ -9,6 +9,14 @@ public class TrafficLight {
     }
 
     public void changeState() {
-        state.changeState();
+        state.nextState(this);
+    }
+
+    public void printColor() {
+        state.printColor();
+    }
+
+    public void setState(State state) {
+        this.state = state;
     }
 }
