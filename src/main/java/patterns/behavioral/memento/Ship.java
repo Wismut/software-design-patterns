@@ -3,6 +3,7 @@ package patterns.behavioral.memento;
 
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Objects;
 
 public class Ship {
     private double lat;
@@ -42,15 +43,9 @@ public class Ship {
     }
 
     public void restore(MementoCoordinates mementoCoordinates) {
-        if (mementoCoordinates != null) {
-            setLat(mementoCoordinates.getLat());
-            setLng(mementoCoordinates.getLng());
-            System.out.println("Coordinates were restored. New coordinates: lng = " +
-                    getLng() +
-                    ", lat = " +
-                    getLat());
-        } else {
-            System.out.println("Can't restore coordinates");
-        }
+        Objects.requireNonNull(mementoCoordinates);
+        setLat(mementoCoordinates.getLat());
+        setLng(mementoCoordinates.getLng());
+        System.out.println("Coordinates were restored");
     }
 }

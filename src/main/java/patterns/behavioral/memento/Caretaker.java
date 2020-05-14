@@ -15,7 +15,11 @@ public class Caretaker {
     }
 
     public MementoCoordinates load(LocalDate date) {
-        return mementos.get(date);
+        MementoCoordinates mementoCoordinates = mementos.get(date);
+        if (mementoCoordinates == null) {
+            throw new RuntimeException("Can't restore coordinates for date " + date);
+        }
+        return mementoCoordinates;
     }
 
     public int getMementosCount() {
