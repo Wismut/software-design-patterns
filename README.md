@@ -1,5 +1,6 @@
 Examples of GOF version design patterns on Java
-Pattern's classification
+
+Pattern's classification (Description from [Wikipedia](https://en.wikipedia.org/wiki/Software_design_pattern))
 * Creational patterns
   * Abstract factory  
     Provide an interface for creating families of related or dependent objects without specifying their concrete classes.
