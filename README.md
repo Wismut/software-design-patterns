@@ -1,4 +1,4 @@
-Examples of design patterns on Java
+Examples of GOF version design patterns on Java
 Pattern's classification
 * Creational patterns
   * Abstract factory  
